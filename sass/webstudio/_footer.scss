@@ -1,0 +1,137 @@
+.footer {
+    height: 252px;
+    background: #2F303A;
+}
+.svg-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.footer img {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    width: 145px;
+}
+address {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.main-footer {
+    background-color: #2F303A;
+}
+
+.main-footer > .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social {
+    padding-left: 70px;
+}
+
+.social-wrap-title {
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+}
+
+.footer-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 24px;
+}
+
+.footer-mail {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.footer-tel {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.footer-mail:hover {
+    color: dodgerblue;
+}
+.footer-tel:hover {
+    color: dodgerblue;
+}
+
+.a {
+    fill: #AFB1B8;
+    padding: 10px;
+    border-radius: 50%;
+    height: 20px;
+    background-color: #ffffff0c;
+    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1)
+}
+.a:hover {
+   transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+   fill: #FFFFFF;
+   background-color: #2196F3;
+   cursor: pointer;
+}
+
+.publicity-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.publicity-title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+.mail-input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2F303A;
+    border: 1px #FFFFFF4D solid;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+.button-subscribe {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background-image: url('./icon send (1).svg');
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+    text-align: left;
+    padding-left: 28px;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 12px;
+    cursor: pointer;
+}

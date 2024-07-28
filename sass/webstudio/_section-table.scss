@@ -1,0 +1,68 @@
+.text1 p {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-bottom: 10px;
+}
+.text1:first-child::before {
+    content: '';
+    display: block;
+    background-image: url("../Photo18/Group-3-1.svg");
+    fill: #2196F3;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.text1:nth-child(2)::before {
+    content: '';
+    display: block;
+    background-image: url("../Photo18/clock-1-2-1.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.text1:nth-child(3)::before {
+    content: '';
+    display: block;
+    background-image: url("../Photo18/diagram-1-2-1.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+
+}
+.text1:last-child::before {
+    content: '';
+    display: block;
+    background-image: url("../Photo18/astronaut-1-2-1.svg");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+.text1 h1 {
+    font-size: 14px;
+}
+.text1 {
+    width: 24%;
+    flex-basis: calc((100% - 60px) /3 );
+}
+.section-table .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
