@@ -1,9 +1,16 @@
-.section-employees .container {
+.section-employees {
     display: flex;
     justify-content: space-between;
     padding-bottom: 94px;
     text-align: center;
     gap: 30px;
+
+    .container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    }
+    
 }
 .card {
     margin: 10px;
