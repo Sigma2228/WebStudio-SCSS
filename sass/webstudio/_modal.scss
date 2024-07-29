@@ -1,6 +1,7 @@
 .is-hidden .modal {
     transform: scale(0.8) translate(-50%, -50%);
 }
+
 .modal {
     display: block;
     position: absolute;
@@ -13,25 +14,29 @@
     opacity: 1;
     transform: scale(1) translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-}
-.modal-wrap {
-   margin-right: 40px;
-}
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+
+    .modal-wrap {
+        margin-right: 40px;
+    }
+
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    .backdrop.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
 .btn {
     width: 216px;
     height: 50px;
@@ -44,48 +49,54 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-}
-.no-scroll {
-    overflow: hidden;
-}
-.label-text {
-    margin-bottom: 10px;
-}
-.sign-out-input {
-    height: 50px;
-}
-.textarea {
-    height: 120px;
-    border: 1px solid #21212133;
-    border-radius: 4px;
-    padding: 10px;
-}
-.label {
-    margin: 20px 0;
-    display: block;
-}
-.checkbox {
-   width: 16px;
-   height: 15px;
-   margin-right: 10px;
-   cursor: pointer;
-}
-.checkbox-text {
-    align-items: center;
-    color: #757575;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-}
-.conditions {
-    color: #2196F3;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
 
+    .no-scroll {
+        overflow: hidden;
+    }
+    .modal-title {
+        color: #212121;
+        font-weight: 700;
+        font-size: 20px;
+        padding-top: 40px;
+    }
 }
+
+
+
+
+
+.checkbox {
+    width: 16px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    .checkbox-wrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .conditions {
+        color: #2196F3;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+
+    }
+
+
+    .checkbox-text {
+        align-items: center;
+        color: #757575;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+}
+
 .submit {
     width: 200px;
     height: 50px;
@@ -99,66 +110,74 @@ text-align: left;
     text-align: center;
     cursor: pointer;
 }
-.checkbox-wrap {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 32px;
-}
 .button-wrap {
     display: flex;
     justify-content: center
 }
-.label-text {
-    color: #757575;
-    font-weight: 400;
-    font-size: 14px;
-}
+
+
+form {
+    margin-left: 40px;
+
 .input-wraper {
     display: block;
     text-align: start;
+
+    .label {
+        margin: 20px 0;
+        display: block;
+    }
+    .label-text {
+        color: #757575;
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .input-wrap {
+        position: relative;
+    }
+    
+ }
 }
-.modal-title {
-    color: #212121;
-    font-weight: 700;
-    font-size: 20px;
-    padding-top: 40px;
-}
-.close-svg {
-    width: 30px;
-    height: 30px;
-}
+
+
 .button-close {
-  border: 0;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  position: absolute;
-  height: 45px;
-  right: 8px;
-  top: 8px;
-  border: 1px solid #0000001A;
-  border-radius: 20px;
-  padding: 6px;
+    border: 0;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    position: absolute;
+    height: 45px;
+    right: 8px;
+    top: 8px;
+    border: 1px solid #0000001A;
+    border-radius: 20px;
+    padding: 6px;
+
+    .close-svg {
+        width: 30px;
+        height: 30px;
+    }
 }
 
-.input-wrap {
-    position: relative;
-}
 
-input[type=text] {
+
+input
+
+  &[type=text] {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: 
-    url('./Vector-3.svg');
+    background-image:
+        url('./Vector-3.svg');
     background-size: 18px 18px;
-    background-position: 10px 14px; 
+    background-position: 10px 14px;
     background-repeat: no-repeat;
     padding-left: 40px;
 }
-input[type=tel] {
+   &[type=tel] {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -167,11 +186,12 @@ input[type=tel] {
     background-color: white;
     background-image: url('./Vector-1-1.svg');
     background-size: 18px 18px;
-    background-position: 10px 15px; 
+    background-position: 10px 15px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
-input[type=email] {
+
+ &[type=email] {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -180,34 +200,37 @@ input[type=email] {
     background-image: url('./Vector-2-1.svg');
     background-size: 18px 18px;
     background-color: white;
-    background-position: 10px 14px; 
+    background-position: 10px 14px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
 }
 
-.textarea:focus {
+.textarea {
+    height: 120px;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    padding: 10px;
+
+&:focus {
     outline-width: 0;
 }
 
-.textarea:not(:placeholder-shown):required:valid {
+&:not(:placeholder-shown):required:valid {
     border-color: green;
 }
-.textarea:not(:placeholder-shown):required:invalid {
-    border-color: red;
-}
 
-.svg-input {
-    height: 18px;
-    width: 18px;
-    position: absolute;
-    bottom: 11px;
-    left: 12px;
+&:not(:placeholder-shown):required:invalid {
+    border-color: red;
+ }
+
 }
-form {
-    margin-left: 40px;
-}
-.sign-out-input:focus {
+.sign-out-input {
+    height: 50px;
+
+&:focus {
     border: 1px solid #2196F3;
     outline-width: 0;
     fill: #2196F3;
+}
+
 }

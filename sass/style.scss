@@ -1,0 +1,18 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@import 'webstudio/header';
+@import 'webstudio/section-button';
+@import 'webstudio/modal';
+@import 'webstudio/section-table';
+@import 'webstudio/section-gallery';
+@import 'webstudio/section-employees';
+@import 'webstudio/clients';
+@import 'webstudio/footer'
