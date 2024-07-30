@@ -1,8 +1,8 @@
 .text1 {
     width: 24%;
-    flex-basis: calc((100% - 60px) /3 );
+    flex-basis: calc((100% - 60px) /3);
 
-    &::before {
+    &:nth-child(1)::before {
         content: '';
         display: block;
         background-image: url("../Photo18/Group-3-1.svg");
@@ -15,7 +15,8 @@
         background-color: #F5F4FA;
         margin-bottom: 30px;
     }
-    &::before {
+
+    &:nth-child(2)::before {
         content: '';
         display: block;
         background-image: url("../Photo18/clock-1-2-1.svg");
@@ -27,7 +28,8 @@
         background-color: #F5F4FA;
         margin-bottom: 30px;
     }
-    &::before {
+
+    &:nth-child(3)::before {
         content: '';
         display: block;
         background-image: url("../Photo18/diagram-1-2-1.svg");
@@ -38,9 +40,10 @@
         background-position: 50% 50%;
         background-color: #F5F4FA;
         margin-bottom: 30px;
-    
+
     }
-    &::before {
+
+    &:nth-child(4)::before {
         content: '';
         display: block;
         background-image: url("../Photo18/astronaut-1-2-1.svg");
@@ -54,6 +57,7 @@
     }
 
 }
+
 .text1 p {
     padding-top: 10px;
     font-size: 14px;
@@ -66,14 +70,12 @@
 }
 
 .section-table {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    
 
 
     .container {
-        width: 1170px;
-        margin: 0 auto;
-        padding: 0 15px;
-      }
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    }
 }

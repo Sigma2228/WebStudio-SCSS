@@ -2,7 +2,7 @@
     padding: 32px;
     position: relative;
 
-    
+
     .header-list {
         display: flex;
         justify-content: space-between;
@@ -10,9 +10,11 @@
         align-items: center;
 
     }
+
     .iconn {
         fill: #2196F3;
     }
+
     .header-wrap {
         display: flex;
         position: relative;
@@ -30,16 +32,14 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
- .container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
- }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
 .header-link {
     margin-left: 50px;
     text-decoration: none;
@@ -55,8 +55,9 @@
         color: #2196F3;
         cursor: pointer;
     }
-    
+
 }
+
 .header-mail {
     text-decoration: none;
     font-size: 14px;
@@ -68,8 +69,8 @@
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       color: #2196F3;
-       cursor: pointer;
+        color: #2196F3;
+        cursor: pointer;
     }
 }
 
@@ -80,13 +81,14 @@
     margin-left: 340px;
 
 
-&:hover {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: #2196F3;
-    cursor: pointer;
-}
+    &:hover {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: #2196F3;
+        cursor: pointer;
+    }
 
 }
+
 .icon-smartphone {
     fill: #757575;
     width: 10px;
@@ -97,8 +99,9 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: #2196F3;
         cursor: pointer;
-     }
+    }
 }
+
 .header-tel {
     text-decoration: none;
     font-size: 14px;
