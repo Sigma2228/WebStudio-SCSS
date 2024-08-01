@@ -10,9 +10,7 @@
 }
 
 .svg-wrap {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
 }
 .main-footer {
     display: flex;
@@ -51,8 +49,9 @@ address {
         display: flex;
         justify-content: space-between;
         width: 206px;
-       
-
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 .social-wrap-title {
@@ -147,5 +146,6 @@ address {
     font-weight: 700;
     line-height: 16px;
     margin-bottom: 20px;
+    
 }
 
