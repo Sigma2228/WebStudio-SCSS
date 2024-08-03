@@ -521,6 +521,12 @@ input[type=email] {
   cursor: pointer;
 }
 
+.svg-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .clients {
   height: 400px;
 }
