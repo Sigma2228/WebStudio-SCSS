@@ -1,27 +1,27 @@
 .header {
     padding: 32px;
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid getColor('header-background');
     margin-bottom: 94px;
 
-    .header-list {
+    .header__list {
         display: flex;
         justify-content: space-between;
         list-style: none;
         align-items: center;
     }
-    .header-logo {
+    .header__logo {
         padding-top: 24px;
         padding-bottom: 32px;
     }
-    .header-wrap {
+    .header__wrap {
         display: flex;
         position: relative;
     }
-    .line-focus {
+    .line__focus {
         width: 78px;
         height: 4px;
         border-radius: 2px;
-        background-color: #2196F3;
+        background-color: getColor('hover');
         margin-left: 47px;
         position: absolute;
         top: 53px;
@@ -35,9 +35,9 @@
     }
 }
 
-.header-link {
+.header__link {
     padding-top: 32px;
-    color: black;
+    color: getColor('font');
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -47,40 +47,40 @@
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: dodgerblue;
+        color: getColor('hover');
     }
 }
 
-.icon-envelope-hover {
+.icon__envelope--hover {
     width: 16px;
     height: 12px;
-    color: #757575;
+    color: getColor('font-card');
     margin-left: 320px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: #2196F3;
+        color: getColor('hover');
         cursor: pointer;
     }
 }
 
-.icon-smartphone {
-    fill: #757575;
+.icon__smartphone {
+    fill: getColor('font-card');
     width: 10px;
     height: 12px;
-    color: #757575;
+    color: getColor('font-card');
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: #2196F3;
+        color: getColor('hover');
         cursor: pointer;
     }
 }
 
-.header-mail {
+.header__mail {
     padding-top: 32px;
-    color: black;
+    color: getColor('font');
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -90,13 +90,13 @@
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: dodgerblue;
+        color: getColor('hover');
     }
 }
 
-.header-tel {
+.header__tel {
     padding-top: 32px;
-    color: black;
+    color: getColor('font');
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -105,6 +105,6 @@
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: dodgerblue;
+        color: getColor('hover');
     }
 }

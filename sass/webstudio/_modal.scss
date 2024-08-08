@@ -29,7 +29,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-wrap {
+.modal__wrap {
     margin-right: 40px;
 }
 .no-scroll {
@@ -51,7 +51,7 @@
 
    
 }
-    .modal-title {
+    .modal__title {
         color: getColor('nav');
         font-weight: 700;
         font-size: 20px;
@@ -61,7 +61,7 @@
 
 
 
-.checkbox-wrap {
+.checkbox__wrap {
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
@@ -85,7 +85,7 @@
     }
 
 
-    .checkbox-text {
+    .checkbox__text {
         align-items: center;
         color: getColor('font-card');
         font-size: 14px;
@@ -109,7 +109,7 @@
     cursor: pointer;
 }
 
-.button-wrap {
+.button__wrap {
     display: flex;
     justify-content: center
 }
@@ -118,7 +118,7 @@
 form {
     margin-left: 40px;
 
-    .input-wraper {
+    .input__wraper {
         display: block;
         text-align: start;
 
@@ -127,14 +127,14 @@ form {
             display: block;
         }
 
-        .label-text {
+        .label__text {
             color: getColor('font-card');
             font-weight: 400;
             font-size: 14px;
             margin-bottom: 10px;
         }
 
-        .input-wrap {
+        .input__wrap {
             position: relative;
         }
 
@@ -142,7 +142,7 @@ form {
 }
 
 
-.button-close {
+.button__close {
     border: 0;
     background-color: getColor('background-card');
     cursor: pointer;
@@ -156,7 +156,7 @@ form {
 
     
 }
-.close-svg {
+.close__svg {
     width: 30px;
     height: 30px;
 }
@@ -225,7 +225,7 @@ input[type=email] {
 
 }
 
-.sign-out-input {
+.sign__out--input {
     height: 50px;
 
     &:focus {

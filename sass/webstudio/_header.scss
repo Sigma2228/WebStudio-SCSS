@@ -3,7 +3,7 @@
    
 
 
-    .header-list {
+    .header__list {
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -15,11 +15,11 @@
         fill: #2196F3;
     }
 
-    .header-wrap {
+    .header__wrap {
         display: flex;
         position: relative;
     }
-    .line-focus {
+    .line__focus {
         width: 48px;
         height: 4px;
         border-radius: 2px;
@@ -41,7 +41,7 @@
     }
 }
 
-.header-link {
+.header__link {
     margin-left: 50px;
     text-decoration: none;
     font-size: 14px;
@@ -62,7 +62,7 @@
 
 
 
-.header-mail {
+.header__mail {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -78,7 +78,7 @@
     }
 }
 
-.icon-envelope-hover {
+.icon__envelope--hover {
     width: 16px;
     height: 12px;
     color: getColor('font-card');
@@ -93,7 +93,7 @@
 
 }
 
-.icon-smartphone {
+.icon__smartphone {
     fill: getColor('font-card');
     width: 10px;
     height: 12px;
@@ -106,7 +106,7 @@
     }
 }
 
-.header-tel {
+.header__tel {
     text-decoration: none;
     font-size: 14px;
     color: getColor('font-card');

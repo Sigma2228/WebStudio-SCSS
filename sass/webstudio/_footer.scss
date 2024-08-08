@@ -1,14 +1,14 @@
-.main-footer {
+.main__footer {
     height: 252px;
     background: getColor('footer-background');
 
-    .footer-info {
+    .footer__info {
         padding-top: 60px;
         padding-bottom: 60px;
         line-height: 24px;
     }
 }
-.main-footer {
+.main__footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -16,7 +16,7 @@
 
 
 
-.main-footer img {
+.main__footer img {
     padding-top: 60px;
     padding-bottom: 20px;
     width: 145px;
@@ -28,7 +28,7 @@ address {
     line-height: 1.7;
 }
 
-.main-footer {
+.main__footer {
    
 
     .container {
@@ -37,7 +37,7 @@ address {
 }
 }
 
-.footer-social {
+.footer__social {
     
     padding-left: 70px;
     
@@ -50,7 +50,7 @@ address {
         align-items: center;
     }
 }
-.social-wrap-title {
+.social__wrap--title {
     color: getColor('background-card');
     padding-bottom: 20px;
     font-size: 14px;
@@ -60,7 +60,7 @@ address {
 
 
 
-.footer-mail {
+.footer__mail {
     text-decoration: none;
     color: getColor('nav');
     font-size: 14px;
@@ -71,7 +71,7 @@ address {
         color: getColor('hover');
     }
 }
-.footer-tel {
+.footer__tel {
     text-decoration: none;
     color: getColor('font-card');
     font-size: 14px;
@@ -101,13 +101,13 @@ address {
 }
 }
 
-.publicity-wrap {
+.publicity__wrap {
     display: flex;
     flex-direction: column;
     }
 
    
-.mail-input {
+.mail__input {
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -118,7 +118,7 @@ address {
     font-weight: 400;
     padding-left: 15px;
 }
-.button-subscribe {
+.button__subscribe {
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -136,7 +136,7 @@ address {
     margin-left: 12px;
     cursor: pointer;
 }
-.publicity-title {
+.publicity__title {
     color: getColor('background-card');
     font-size: 14px;
     font-weight: 700;

@@ -16,21 +16,21 @@
   border-bottom: 1px solid #ECECEC;
   margin-bottom: 94px;
 }
-.header .header-list {
+.header .header__list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
 }
-.header .header-logo {
+.header .header__logo {
   padding-top: 24px;
   padding-bottom: 32px;
 }
-.header .header-wrap {
+.header .header__wrap {
   display: flex;
   position: relative;
 }
-.header .line-focus {
+.header .line__focus {
   width: 78px;
   height: 4px;
   border-radius: 2px;
@@ -45,9 +45,9 @@
   justify-content: space-between;
 }
 
-.header-link {
+.header__link {
   padding-top: 32px;
-  color: black;
+  color: #212121;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -55,39 +55,39 @@
   margin-left: 51px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover {
+.header__link:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: dodgerblue;
+  color: #2196F3;
 }
 
-.icon-envelope-hover {
+.icon__envelope--hover {
   width: 16px;
   height: 12px;
   color: #757575;
   margin-left: 320px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-envelope-hover:hover {
+.icon__envelope--hover:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   cursor: pointer;
 }
 
-.icon-smartphone {
+.icon__smartphone {
   fill: #757575;
   width: 10px;
   height: 12px;
   color: #757575;
 }
-.icon-smartphone:hover {
+.icon__smartphone:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   cursor: pointer;
 }
 
-.header-mail {
+.header__mail {
   padding-top: 32px;
-  color: black;
+  color: #212121;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -95,26 +95,26 @@
   margin-left: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-mail:hover {
+.header__mail:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: dodgerblue;
+  color: #2196F3;
 }
 
-.header-tel {
+.header__tel {
   padding-top: 32px;
-  color: black;
+  color: #212121;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   margin-left: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-tel:hover {
+.header__tel:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: dodgerblue;
+  color: #2196F3;
 }
 
-.text-button {
+.text__button {
   width: 125px;
   line-height: 26px;
   height: 38px;
@@ -126,34 +126,34 @@
   font-size: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text-button:first-child {
+.text__button:first-child {
   width: 78px;
 }
-.text-button:nth-child(2) {
+.text__button:nth-child(2) {
   width: 125px;
 }
-.text-button:nth-child(3) {
+.text__button:nth-child(3) {
   width: 112px;
 }
-.text-button:nth-child(4) {
+.text__button:nth-child(4) {
   width: 103px;
 }
-.text-button:last-child {
+.text__button:last-child {
   width: 130px;
 }
-.text-button:hover {
+.text__button:hover {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #2196F3;
-  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1215686275);
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
   color: #FFFFFF;
   cursor: pointer;
 }
 
-.section-button {
+.section__button {
   margin-bottom: 34px;
 }
 
-.section-button .container {
+.section__button .container {
   display: flex;
   justify-content: center;
 }
@@ -166,7 +166,7 @@
   gap: 30px;
 }
 
-.main-gallery {
+.main__gallery {
   width: 100%;
   height: 100%;
 }
@@ -196,7 +196,7 @@ figure:hover .thumb {
   background-color: #2196F3;
 }
 
-.text-transform {
+.text__transform {
   color: #FFFFFF;
   font-family: Roboto;
   font-size: 18px;
@@ -232,10 +232,10 @@ figure {
 }
 figure:hover {
   cursor: pointer;
-  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1215686275);
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-.main-title {
+.main__title {
   font-size: 18px;
   font-weight: 700;
 }
@@ -244,23 +244,23 @@ figure:hover {
   margin-bottom: 94px;
 }
 
-.main-footer {
+.main__footer {
   height: 252px;
   background: #2F303A;
 }
-.main-footer .footer-info {
+.main__footer .footer__info {
   padding-top: 60px;
   padding-bottom: 60px;
   line-height: 24px;
 }
 
-.main-footer {
+.main__footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.main-footer img {
+.main__footer img {
   padding-top: 60px;
   padding-bottom: 20px;
   width: 145px;
@@ -273,15 +273,15 @@ address {
   line-height: 1.7;
 }
 
-.main-footer .container {
+.main__footer .container {
   display: flex;
   align-items: center;
 }
 
-.footer-social {
+.footer__social {
   padding-left: 70px;
 }
-.footer-social .socials {
+.footer__social .socials {
   display: flex;
   justify-content: space-between;
   width: 206px;
@@ -290,33 +290,33 @@ address {
   align-items: center;
 }
 
-.social-wrap-title {
+.social__wrap--title {
   color: #FFFFFF;
   padding-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
 }
 
-.footer-mail {
+.footer__mail {
   text-decoration: none;
-  color: gray;
+  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
 }
-.footer-mail:hover {
-  color: dodgerblue;
+.footer__mail:hover {
+  color: #2196F3;
 }
 
-.footer-tel {
+.footer__tel {
   text-decoration: none;
-  color: gray;
+  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
 }
-.footer-tel:hover {
-  color: dodgerblue;
+.footer__tel:hover {
+  color: #2196F3;
 }
 
 .a {
@@ -334,12 +334,12 @@ address {
   cursor: pointer;
 }
 
-.publicity-wrap {
+.publicity__wrap {
   display: flex;
   flex-direction: column;
 }
 
-.mail-input {
+.mail__input {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -351,7 +351,7 @@ address {
   padding-left: 15px;
 }
 
-.button-subscribe {
+.button__subscribe {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -370,7 +370,7 @@ address {
   cursor: pointer;
 }
 
-.publicity-title {
+.publicity__title {
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
