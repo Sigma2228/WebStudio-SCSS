@@ -24,7 +24,7 @@
     .who-we-are-profesion {
         font-size: 16px;
         font-weight: 400;
-        color: #757575;
+        color: getColor('font-card');
         padding-bottom: 30px;
     }
 
@@ -34,9 +34,9 @@
     }
     .who-we-are-item {
         height: 428px;
-        background: #FFFFFF;
+        background: getColor('background-card');
         border-radius: 3px;
-        box-shadow: 0 4px 3px 0 #00000033;
+        box-shadow: 0 4px 3px 0 getColor('box-shadow')
     }
 }
 .section-title {
@@ -47,10 +47,10 @@
     text-align: center;
 }
 .section-employees {
-    background: #F5F4FA;
+    background: getColor('background');
 }
 .svg {
-    fill: #AFB1B8;
+    fill: getColor('icon');
     padding: 10px;
     height: 20px;
     border-radius: 50%;
@@ -59,7 +59,7 @@
 &:hover {
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
    fill: #FFFFFF;
-   background-color: #2196F3;
+   background-color: getColor('hover');
    cursor: pointer;
   }
 }

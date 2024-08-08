@@ -1,6 +1,6 @@
 .main-footer {
     height: 252px;
-    background: #2F303A;
+    background: getColor('footer-background');
 
     .footer-info {
         padding-top: 60px;
@@ -22,7 +22,7 @@
     width: 145px;
 }
 address {
-    color: #FFFFFF;
+    color: getColor('background-card');
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
@@ -51,7 +51,7 @@ address {
     }
 }
 .social-wrap-title {
-    color: #FFFFFF;
+    color: getColor('background-card');
     padding-bottom: 20px;
     font-size: 14px;
     font-weight: 700;
@@ -62,41 +62,41 @@ address {
 
 .footer-mail {
     text-decoration: none;
-    color: gray;
+    color: getColor('nav');
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
 
     &:hover {
-        color: dodgerblue;
+        color: getColor('hover');
     }
 }
 .footer-tel {
     text-decoration: none;
-    color: gray;
+    color: getColor('font-card');
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
 
     &:hover {
-        color: dodgerblue;
+        color: getColor('hover');
     }
 }
 
 
 
 .a {
-    fill: #AFB1B8;
+    fill: getColor('icon');
     padding: 10px;
     border-radius: 50%;
     height: 20px;
-    background-color: #ffffff0c;
+    background-color: getColor('icon-background');
     transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 
 &:hover {
    transition: fill 250ms  cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-   fill: #FFFFFF;
-   background-color: #2196F3;
+   fill: getColor('background-card');
+   background-color: getColor('hover');
    cursor: pointer;
 }
 }
@@ -111,8 +111,8 @@ address {
     width: 358px;
     height: 50px;
     border-radius: 4px;
-    background-color: #2F303A;
-    border: 1px #FFFFFF4D solid;
+    background-color: getColor('footer-background');
+    border: 1px getColor('mail-input-border') solid;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -130,14 +130,14 @@ address {
     text-align: left;
     padding-left: 28px;
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: getColor('hover');
     border: 0;
     border-radius: 4px;
     margin-left: 12px;
     cursor: pointer;
 }
 .publicity-title {
-    color: #FFFFFF;
+    color: getColor('background-card');
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;

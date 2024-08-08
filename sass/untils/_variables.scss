@@ -7,5 +7,19 @@ $colors: (
     'font':#212121,
     'font-card':#757575,
     'icon':#AFB1B8,
-    'background-gallery':#2F303A,
-)
+    'background-gallery':#2f303acc,
+    'border':#0000001A,
+    'input-border':#ccc,
+    'background-input':white,
+    'textarea-border':#21212133,
+    'valid':green,
+    'invalid':red,
+    'backdrop':rgba(0, 0, 0, 0.5),
+    'box-shadow':#00000033,
+    'footer-background':#2F303A,
+    'icon-background':#ffffff0c,
+    'mail-input-border':#FFFFFF4D
+);
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }
