@@ -9,6 +9,8 @@
     padding: 0 15px;
     text-decoration: none;
 }
+@import 'untils/mixins';
+@import 'untils/placeholders';
 @import 'untils/variables';
 @import 'webstudio/header';
 @import 'webstudio/section-button';

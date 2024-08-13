@@ -32,8 +32,7 @@ address {
    
 
     .container {
-        display: flex;
-        align-items: center;
+       @extend %center;
 }
 }
 
@@ -43,8 +42,7 @@ address {
     
 
     .socials {
-        display: flex;
-        justify-content: space-between;
+      @extend %flex;
         width: 206px;
         display: flex;
         justify-content: space-around;

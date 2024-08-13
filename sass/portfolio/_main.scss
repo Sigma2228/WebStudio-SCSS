@@ -1,7 +1,6 @@
 .main {
     .container {
-    display: flex;
-    flex-direction: row;
+    @extend %flex;
     padding-right: 30px;
     flex-wrap: wrap;
     gap: 30px;

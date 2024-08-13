@@ -4,10 +4,7 @@
     margin-bottom: 94px;
 
     .header__list {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        align-items: center;
+        @extend %list-style;
     }
     .header__logo {
         padding-top: 24px;
@@ -30,8 +27,7 @@
 
 .header {
     .container {
-        display: flex;
-        justify-content: space-between;
+       @extend %flex;
     }
 }
 
@@ -51,7 +47,7 @@
     }
 }
 
-.icon__envelope--hover {
+.icon-envelope-hover {
     width: 16px;
     height: 12px;
     color: getColor('font-card');
@@ -65,7 +61,7 @@
     }
 }
 
-.icon__smartphone {
+.icon-smartphone {
     fill: getColor('font-card');
     width: 10px;
     height: 12px;

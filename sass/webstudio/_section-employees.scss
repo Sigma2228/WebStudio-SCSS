@@ -1,8 +1,7 @@
 .section__employees {
    
     .container {
-        display: flex;
-        justify-content: space-between;
+       @extend %flex;
         padding-bottom: 94px;
         text-align: center;
         gap: 30px;

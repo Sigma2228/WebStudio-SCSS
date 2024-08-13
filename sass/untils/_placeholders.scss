@@ -1,0 +1,31 @@
+%list-style {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+%flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%container__size {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+%table {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    height: 100px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-color: getColor('background');
+    margin-bottom: 30px;
+}
+%center {
+    display: flex;
+    justify-content: center;
+}

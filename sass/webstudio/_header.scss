@@ -3,12 +3,8 @@
    
 
 
-    .header__list {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        align-items: center;
-
+    .header-list {
+        @extend %list-style;
     }
 
     .iconn {
@@ -35,9 +31,7 @@
 .header {
 
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+       @extend %container;
     }
 }
 
@@ -78,7 +72,7 @@
     }
 }
 
-.icon__envelope--hover {
+.icon-envelope-hover {
     width: 16px;
     height: 12px;
     color: getColor('font-card');
@@ -93,7 +87,7 @@
 
 }
 
-.icon__smartphone {
+.icon-smartphone {
     fill: getColor('font-card');
     width: 10px;
     height: 12px;

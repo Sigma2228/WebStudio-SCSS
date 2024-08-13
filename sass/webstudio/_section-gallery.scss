@@ -1,7 +1,6 @@
 
 .div__img {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
     flex-basis: calc((100% - 60px) /2 );
 }
 .img__wrap {
@@ -42,8 +41,6 @@
     gap: 30px;
 
     .container {
-        width: 1170px;
-        margin: 0 auto;
-        padding: 0 15px;
+      @extend %container-size;
     }
 }

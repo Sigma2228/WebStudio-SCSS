@@ -9,6 +9,8 @@
         margin: 0 auto;
         padding: 0 15px;
     }
+    @import 'untils/mixins';
+    @import 'untils/placeholders';
     @import 'untils/variables';
     @import 'portfolio/header';
     @import 'portfolio/section-button';

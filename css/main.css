@@ -11,16 +11,28 @@
   padding: 0 15px;
 }
 
-.header {
-  padding: 32px;
-  border-bottom: 1px solid #ECECEC;
-  margin-bottom: 94px;
-}
 .header .header__list {
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
+}
+
+.footer__social .socials, .main .container, .header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__footer .container, .section__button .container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  padding: 32px;
+  border-bottom: 1px solid #ECECEC;
+  margin-bottom: 94px;
 }
 .header .header__logo {
   padding-top: 24px;
@@ -40,11 +52,6 @@
   top: 53px;
 }
 
-.header .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header__link {
   padding-top: 32px;
   color: #212121;
@@ -60,26 +67,26 @@
   color: #2196F3;
 }
 
-.icon__envelope--hover {
+.icon-envelope-hover {
   width: 16px;
   height: 12px;
   color: #757575;
   margin-left: 320px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon__envelope--hover:hover {
+.icon-envelope-hover:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   cursor: pointer;
 }
 
-.icon__smartphone {
+.icon-smartphone {
   fill: #757575;
   width: 10px;
   height: 12px;
   color: #757575;
 }
-.icon__smartphone:hover {
+.icon-smartphone:hover {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   cursor: pointer;
@@ -153,14 +160,7 @@
   margin-bottom: 34px;
 }
 
-.section__button .container {
-  display: flex;
-  justify-content: center;
-}
-
 .main .container {
-  display: flex;
-  flex-direction: row;
   padding-right: 30px;
   flex-wrap: wrap;
   gap: 30px;
@@ -273,17 +273,10 @@ address {
   line-height: 1.7;
 }
 
-.main__footer .container {
-  display: flex;
-  align-items: center;
-}
-
 .footer__social {
   padding-left: 70px;
 }
 .footer__social .socials {
-  display: flex;
-  justify-content: space-between;
   width: 206px;
   display: flex;
   justify-content: space-around;
