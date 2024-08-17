@@ -20,3 +20,15 @@
 @import 'webstudio/section-employees';
 @import 'webstudio/clients';
 @import 'webstudio/footer';
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 480px;
+    }
+}
+    

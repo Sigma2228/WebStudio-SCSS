@@ -41,6 +41,6 @@
     gap: 30px;
 
     .container {
-      @extend %container-size;
+      @extend %container__size;
     }
 }
