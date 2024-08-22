@@ -1,14 +1,16 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
+
 .container {
     width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
     text-decoration: none;
 }
+
 @import 'untils/mixins';
 @import 'untils/placeholders';
 @import 'untils/variables';
@@ -21,14 +23,82 @@
 @import 'webstudio/clients';
 @import 'webstudio/footer';
 
+/* Large: 992px - 1199px */
 @media (max-width: 1199px) {
     .container {
-        max-width: 720px;
+        width: 960px;
     }
-}
-@media (max-width: 768px) {
-    .container {
-        max-width: 480px;
+    .header__link {
+        margin-left: 50px;
     }
-}
+   .icon-envelope-hover {
+    margin-left: 130px;
+   }
+    .clients__img--wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+    .card {
+        width: 200px;
+         
+
+        .who-we-are-img {
+            width: 100%;
+        }
+        .who-we-are-item {
+            height: 360px;
+        }
+    }
+    .div__img {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .img__wrap {
+        width: 250px;
+    }
+    .section__table {
+        .container {
+           gap: 10px;
+        }
+    }
+    .mail__input {
+        width: 300px;
+    }
+    .button__subscribe {
+        width: 100px;
+        padding-left: 3px;
+    }
+    .section__employees {
+        .container {
+            gap: 10px;
+        }
+    }
     
+    
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

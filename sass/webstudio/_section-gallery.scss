@@ -5,7 +5,7 @@
 }
 .img__wrap {
     width: 30%;
-    height: 294px;
+    height: auto;
     position: relative;
 
     .section__img {
@@ -39,7 +39,6 @@
 
 .section__gallery {
     gap: 30px;
-
     .container {
       @extend %container__size;
     }

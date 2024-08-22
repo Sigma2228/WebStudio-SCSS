@@ -1,17 +1,18 @@
 .section__employees {
    
     .container {
-       @extend %flex;
+        @extend %flex;
         padding-bottom: 94px;
         text-align: center;
         gap: 30px;
+
     }
 }
 .card {
     margin: 10px;
     align-items: center;
     flex-basis: calc((100% - 60px) /3 );
-
+   
 
     .who-we-are-name {
         font-size: 16px;
