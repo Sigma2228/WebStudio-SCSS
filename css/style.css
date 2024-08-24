@@ -689,7 +689,7 @@ address {
     width: 100%;
   }
   .card .who-we-are-item {
-    height: 360px;
+    height: 350px;
   }
   .div__img {
     display: flex;
@@ -717,6 +717,49 @@ address {
 @media (max-width: 991px) {
   .container {
     width: 720px;
+  }
+  .div__img {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 50px;
+  }
+  .section__title {
+    text-align: start;
+    margin-left: 300px;
+  }
+  .section__employees .section__title {
+    margin-left: 350px;
+  }
+  .header__link {
+    margin-left: 25px;
+    font-size: small;
+  }
+  .icon-envelope-hover {
+    margin-left: 15px;
+  }
+  .header__mail {
+    margin-right: 15px;
+    margin-left: 5px;
+  }
+  .header__tel {
+    margin-left: 5px;
+  }
+  .line__focus {
+    position: absolute;
+    left: -26px;
+  }
+  .mail__input {
+    width: 150px;
+    margin-left: -30px;
+  }
+  .button__subscribe {
+    width: 90px;
+    font-size: 14px;
+    margin-left: 1px;
+  }
+  .footer__social {
+    padding-left: 30px;
   }
 }
 /* Small: 576px - 767px */
