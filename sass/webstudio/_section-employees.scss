@@ -2,6 +2,7 @@
    
     .container {
         @extend %flex;
+        flex-wrap: wrap;
         padding-bottom: 94px;
         text-align: center;
         gap: 30px;
