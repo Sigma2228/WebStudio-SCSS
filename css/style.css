@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.footer__social .socials, .section__employees .container, .div__img, .section__table .container, .header .container {
+.footer__social .socials, .section__employees .container, .div__img, .text1__wrap, .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +38,6 @@
   height: 100px;
   width: 100%;
   background-position: 50% 50%;
-  background-color: getColor("background");
   margin-bottom: 30px;
 }
 
@@ -101,6 +100,10 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196F3;
   cursor: pointer;
+}
+
+.mail-tel-wrap {
+  display: flex;
 }
 
 .icon-smartphone {
@@ -366,9 +369,16 @@ input[type=email] {
   fill: #2196F3;
 }
 
+.text1__wrap {
+  gap: 30px;
+}
+
 .text1 {
   width: 24%;
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 2);
+}
+.text1::before {
+  background-color: #F5F4FA;
 }
 .text1:nth-child(1)::before {
   background-image: url("../Photo18/Group-3-1.svg");
@@ -392,10 +402,6 @@ input[type=email] {
 
 .text1 h1 {
   font-size: 14px;
-}
-
-.section__table .container {
-  gap: 30px;
 }
 
 .div__img {
@@ -433,7 +439,6 @@ input[type=email] {
   gap: 30px;
 }
 .section__employees .container {
-  flex-wrap: wrap;
   padding-bottom: 94px;
   text-align: center;
   gap: 30px;
@@ -466,16 +471,16 @@ input[type=email] {
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+.section__employees {
+  background-color: #F5F4FA;
+}
+
 .section__title {
   font-size: 36px;
   font-weight: 700;
   padding-bottom: 50px;
   padding-top: 77px;
   text-align: center;
-}
-
-.section__employees {
-  background: #F5F4FA;
 }
 
 .svg {
@@ -719,15 +724,52 @@ address {
   .container {
     width: 720px;
   }
+  .card {
+    flex-basis: calc((100% - 60px) / 2);
+  }
   .section__employees {
     height: 1285px;
   }
   .section__employees .container {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .section__gallery {
+    display: none;
   }
   .card .who-we-are-item {
     height: 534px;
-    width: 354px;
+    width: 100%;
+  }
+  .text1__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .header__mail {
+    line-height: 2;
+  }
+  .header__tel {
+    line-height: 2;
+  }
+  .header__link {
+    margin-left: 50px;
+  }
+  .icon-envelope-hover {
+    margin: 0;
+  }
+  .header__wrap {
+    margin-left: 50px;
+  }
+  .mail-tel-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .text1 {
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 /* Small: 576px - 767px */

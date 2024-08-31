@@ -1,6 +1,14 @@
+.text1__wrap {
+    @extend %flex;
+    gap: 30px;
+}
 .text1 {
     width: 24%;
-    flex-basis: calc((100% - 60px) /3);
+    flex-basis: calc((100% - 60px) /2);
+
+    &::before {
+        background-color: getColor('background');
+    }
 
     &:nth-child(1)::before {
         background-image: url("../Photo18/Group-3-1.svg");
@@ -33,14 +41,4 @@
 
 .text1 h1 {
     font-size: 14px;
-}
-
-.section__table {
-    
-
-
-    .container {
-    @extend %flex;
-    gap: 30px;
-    }
 }

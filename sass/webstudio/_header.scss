@@ -86,7 +86,9 @@
     }
 
 }
-
+.mail-tel-wrap {
+    display: flex;
+}
 .icon-smartphone {
     fill: getColor('font-card');
     width: 10px;

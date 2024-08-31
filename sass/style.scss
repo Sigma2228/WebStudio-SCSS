@@ -87,25 +87,64 @@
         width: 720px;
     }
     
-   
+   .card {
+    flex-basis: calc((100% - 60px) /2 );
+   }
       
        .section__employees {
         height: 1285px;
 
         .container {
          display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
        
         
         }
-}
+    }
+        .section__gallery {
+            display: none;
+        }
     .card {
 
     .who-we-are-item {
         height: 534px;
-        width: 354px;
+        width: 100%;
     }
 }
+.text1__wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  
 }
+.header__mail {
+    line-height: 2;
+}
+.header__tel {
+    line-height: 2;
+}
+.header__link {
+   margin-left: 50px;
+}
+.icon-envelope-hover {
+    margin: 0;
+}
+.header__wrap {
+    margin-left: 50px;
+}
+.mail-tel-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.text1 {
+    flex-basis: calc((100% - 60px) /2 );
+   }
+   
+}
+
 
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
