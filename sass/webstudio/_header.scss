@@ -10,7 +10,10 @@
     .iconn {
         fill: #2196F3;
     }
-
+     .header__wrapper {
+        display: flex;
+        align-items: center;
+     }
     .header__wrap {
         display: flex;
         position: relative;
@@ -116,4 +119,7 @@
         color: map-get($colors, 'hover');
         cursor: pointer;
     }
+}
+.mail-tel-wrap {
+    display: flex;
 }
