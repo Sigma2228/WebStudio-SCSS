@@ -35,7 +35,7 @@
   display: block;
   background-repeat: no-repeat;
   background-size: 25%;
-  height: 100px;
+  height: 120px;
   width: 100%;
   background-position: 50% 50%;
   margin-bottom: 30px;
@@ -44,7 +44,7 @@
 .header {
   padding: 32px;
 }
-.header .iconn {
+.header .header__icon {
   fill: #2196F3;
 }
 .header .header__wrapper {
@@ -562,6 +562,19 @@ input[type=email] {
   align-items: flex-start;
 }
 
+.footer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.publicity__title {
+  padding-top: 65px;
+}
+
+.social__wrap--title {
+  padding-top: 65px;
+}
+
 .main__footer img {
   padding-top: 60px;
   padding-bottom: 20px;
@@ -729,6 +742,19 @@ address {
   .section__gallery {
     display: flex;
   }
+  .footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__info {
+    text-align: center;
+  }
+  .social__wrap--title {
+    padding-top: 65px;
+  }
+  .publicity__title {
+    padding-top: 65px;
+  }
 }
 /* Medium: 768px - 991px */
 @media (max-width: 991px) {
@@ -782,11 +808,47 @@ address {
   .text1 {
     flex-basis: calc((100% - 60px) / 2);
   }
+  .button__subscribe {
+    text-align: start;
+    padding-left: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  .main__footer {
+    height: auto;
+  }
+  .footer__info {
+    text-align: center;
+    margin-right: 250px;
+  }
+  .mail__input {
+    width: 550px;
+  }
+  .publicity__wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .social__wrap--title {
+    margin-top: 65px;
+    text-align: center;
+  }
+  .footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 /* Small: 576px - 767px */
 @media (max-width: 767px) {
   .container {
     width: 540px;
+  }
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
   }
   .card {
     flex-basis: calc((100% - 60px) / 2);
@@ -840,6 +902,38 @@ address {
   .text1 {
     flex-basis: calc((100% - 60px) / 2);
   }
+  .button__subscribe {
+    text-align: start;
+    padding-left: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  .main__footer {
+    height: auto;
+  }
+  .footer__info {
+    text-align: center;
+    margin-right: 70px;
+  }
+  .mail__input {
+    width: 400px;
+  }
+  .publicity__wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .social__wrap--title {
+    margin-top: 65px;
+    text-align: center;
+  }
+  .footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 /* Extra small: 0px (320px) - 575px */
 @media (max-width: 575px) {
@@ -848,6 +942,30 @@ address {
     height: 100%;
     padding: 0 15px;
   }
+  .header__icon {
+    margin-right: 100px;
+  }
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .card .who-we-are-item {
+    height: auto;
+    width: 100%;
+  }
+  .text1 {
+    width: 24%;
+    flex-basis: calc((100% - 60px) / 1);
+  }
+  .text1::before:nth-child(1) {
+    background-color: #F5F4FA;
+  }
+  .text1 h1 {
+    text-align: center;
+  }
   label {
     display: block;
     height: 30px;
@@ -855,7 +973,7 @@ address {
     margin-left: auto;
     position: relative;
     z-index: 10;
-    margin-left: 80px;
+    margin-left: 0;
   }
   label span {
     top: 15px;
@@ -907,21 +1025,25 @@ address {
   }
   .publicity__wrap {
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: start;
   }
   .header .header__wrapper {
     display: none;
   }
-  .mail__input {
-    width: 350px;
-  }
   .publicity__wrap {
     display: flex;
     justify-content: center;
   }
+  .publicity__wrap .publicity__title {
+    margin-top: 60px;
+  }
   .publicity__wrap form {
     margin: 0;
+  }
+  .publicity__wrap .mail__input {
+    width: 90vw;
   }
   .button__subscribe {
     text-align: start;
@@ -930,6 +1052,24 @@ address {
     height: 50px;
     margin-top: 50px;
     margin-left: 0;
+  }
+  .social__wrap--title {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .footer__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+  }
+  .iconn {
+    margin-bottom: 20px;
+    padding-left: 17px;
+  }
+  .main__footer {
+    height: auto;
   }
   .main__footer .footer__wrap {
     text-align: center;
@@ -950,6 +1090,7 @@ address {
   .clients__img--wrap {
     display: flex;
     justify-content: start;
+    gap: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }

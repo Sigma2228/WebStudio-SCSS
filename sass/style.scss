@@ -80,6 +80,20 @@
     .section__gallery {
         display: flex;
     }
+    .footer__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .footer__info {
+        text-align: center;
+    }
+    .social__wrap--title {
+        padding-top: 65px;
+    }
+    .publicity__title {
+        padding-top: 65px;
+    }
    
     
 }
@@ -145,6 +159,39 @@
 .text1 {
     flex-basis: calc((100% - 60px) /2 );
    }
+   .button__subscribe {
+    text-align: start;
+    padding-left: 30px;
+    width: 200px;
+    height: 50px;
+   margin-top: 50px;
+   margin-left: 0;
+   margin-bottom: 60px;
+   }
+   .main__footer {
+    height: auto;
+   }
+   .footer__info {
+    text-align: center;
+    margin-right: 250px;
+   }
+   .mail__input {
+    width: 550px;
+   }
+   .publicity__wrap {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+   .social__wrap--title {
+    margin-top: 65px;
+    text-align: center;
+   }
+  .footer__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
    
 }
 
@@ -154,7 +201,10 @@
     .container {
         width: 540px;
     }
-  
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
     .card {
         flex-basis: calc((100% - 60px) /2 );
         height: auto;
@@ -214,6 +264,39 @@
     .text1 {
         flex-basis: calc((100% - 60px) /2 );
        }
+       .button__subscribe {
+        text-align: start;
+        padding-left: 30px;
+        width: 200px;
+        height: 50px;
+       margin-top: 50px;
+       margin-left: 0;
+       margin-bottom: 60px;
+       }
+       .main__footer {
+        height: auto;
+       }
+       .footer__info {
+        text-align: center;
+        margin-right: 70px;
+       }
+       .mail__input {
+        width: 400px;
+       }
+       .publicity__wrap {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       }
+       .social__wrap--title {
+        margin-top: 65px;
+        text-align: center;
+       }
+      .footer__wrap {
+        display: flex;
+        flex-wrap: wrap;
+
+      }
        
 }
 
@@ -224,6 +307,36 @@
         height: 100%;
         padding: 0 15px;
     }
+    .header__icon {
+        margin-right: 100px;
+    }
+    
+    .modal {
+        min-width: 450px;
+        min-height: 609px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+   
+    .card {
+    
+        .who-we-are-item {
+           height: auto;
+            width: 100%;
+        }
+    }
+    .text1 {
+        width: 24%;
+        flex-basis: calc((100% - 60px) /1);
+    
+        &::before:nth-child(1) {
+            background-color: getColor('background');
+        }
+    }
+    .text1 h1 {
+        text-align: center;
+    }
     label {
         display: block;
         height: 30px;
@@ -231,7 +344,7 @@
         margin-left: auto;
         position: relative;
         z-index: 10;
-        margin-left: 80px;
+        margin-left: 0;
     }
     label span {
         top: 15px;
@@ -291,7 +404,7 @@
    
         .publicity__wrap {
             width: 100%;
-          
+             display: flex;
             flex-wrap: wrap;
             justify-content: start;
         }
@@ -300,17 +413,23 @@
             display: none;
         }
     }
-    .mail__input {
-        width: 350px;
-       
-       }
+
+   
        .publicity__wrap {
         display: flex;
         justify-content: center;
+        .publicity__title {
+            margin-top: 60px;
+        }
+       
 
         form {
             margin: 0;
         }
+        .mail__input {
+            width: 90vw;
+           
+           }
        }
        .button__subscribe {
         text-align: start;
@@ -320,8 +439,24 @@
        margin-top: 50px;
        margin-left: 0;
        }
+       .social__wrap--title {
+        padding-top: 0;
+        margin-top: 0;
+       }
+       .footer__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+       }
+       .iconn {
+        margin-bottom: 20px;
+        padding-left: 17px;
+       }
        
         .main__footer {
+            height: auto;
            
        .footer__wrap {
         text-align: center;
@@ -345,6 +480,7 @@
     .clients__img--wrap {
         display: flex;
         justify-content: start;
+        gap: 30px;
         flex-basis: calc((100% - 60px) /2 );
     }
 }
