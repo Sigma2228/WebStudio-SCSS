@@ -25,35 +25,45 @@
     </head>
 
     <body>
-        <header class="header" data-aos="fade-down" data-aos-duration="1000">
+        <header class="header">
             <div class="container">
-                <svg class="iconn" height="32px" width="150px">
-                    <use href="./Photo18/symbol-defs.svg#icon-WebStudio-3-1"></use>
-                </svg>
-                <ul class="header__list">
-                    <div class="header__wrapper">
-                <li><a href="index.html" class="header__link">Студія</a></li>
-                <div class="header__wrap">
-                <li><a href="#" class="header__link">Портфоліо</a></li>
-                <div class="line__focus"></div>
-            </div>
-              <li><a href="#" class="header__link">Контакти</a></li>
-                    </div>
-
-                <div class="mail-tel-wrap">
-                <li><i class="icon-envelope-hover"></i><a href="mailto:info@devstudio.com" class="header__mail">info@devstudio.com</a></li>
-                <li><i class="icon-smartphone"></i><a href="tel:+096 111 11 11" class="header__tel">+38 096 111 11 11</a></li>
-                </div>
-                </ul>
+                <nav class="navigation">
+                    <ul class="header__list">
+                        <svg class="header__icon" height="32px" width="150px">
+                            <use href="./Photo18/symbol-defs.svg#icon-WebStudio-3-1"></use>                    </svg>
+                            <div class="header__wrapper">
+                        <div class="header__wrap">
+                        <li><a class="header__link" href="index.html">Студія</a></li>
+                        <div class="line__focus"></div>
+                        <li><a class="header__link" href="portfolio.html"> Портфоліо</a></li>
+                        <li><a class="header__link" href="#">Контакти</a></li>
+                        </div>
+                       
+    
+                         <div class="mail-tel-wrap">
+                        <li><i class="icon-envelope-hover"><a class="header__mail" href="">info@devstudio.com</a></i></li>
+                        <li><i class="icon-smartphone"><a class="header__tel" href="#">+38 096 111 11 11</a></i></li>
+                         </div>
+                            </div>
+                        
+                         <label for="toogle">
+                            <span></span>
+                         </label>
+                       
+                       
+                    </ul>
+                </nav>
             </div>
         </header>
         <section class="section__button">
             <div class="container">
+                <div class="section__button--wrap">
                 <button class="text__button" type="button" data-aos="zoom-out-right" data-aos-duration="1000">Усі</button>
                 <button class="text__button" type="button" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="100">Веб-Сайти</button>
                 <button class="text__button" type="button" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">Додатки</button>
                 <button class="text__button" type="button" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="300">Дизайн</button>
                 <button class="text__button" type="button" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="400">Маркетинг</button>
+                </div>
             </div>
         </section>
         <main class="main">

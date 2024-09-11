@@ -19,7 +19,10 @@
     /* Large: 992px - 1199px */
 @media (max-width: 1199px) {
     .container {
-      width: 100%;
+      width: 960px;
+    }
+    .header {
+      margin-bottom: 32px;
     }
     .header__link {
       margin-left: 50px;
@@ -43,7 +46,6 @@
   .footer__wrap {
       display: flex;
       flex-wrap: wrap;
-      
   }
   .footer__info {
       text-align: center;
@@ -54,6 +56,9 @@
   .publicity__title {
       padding-top: 65px;
   }
+  .icon-envelope-hover {
+    margin-left: 100px;
+}
  
   
   }
@@ -81,7 +86,7 @@
   }
   .mail-tel-wrap {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       margin-left: 50px;
   }
      .button__subscribe {
@@ -110,7 +115,7 @@
       text-align: center;
      }
      .social__wrap--title {
-      margin-top: 65px;
+      padding-top: 60px;
       text-align: center;
      }
     .footer__wrap {
@@ -177,6 +182,7 @@
       text-align: center;
       margin-right: 70px;
      }
+    
      .mail__input {
       width: 90vw;
       margin-left: 1px;
@@ -187,8 +193,11 @@
       text-align: center;
      }
      .social__wrap--title {
-      margin-top: 65px;
+      padding-top: 0;
       text-align: center;
+     }
+     .social__wrap--title {
+      padding-top: 65px;
      }
     .footer__wrap {
       display: flex;
@@ -205,8 +214,68 @@
       width: 100%;
       padding: 0 15px;
     }
-    .card {
-        flex-basis: calc((100% - 60px) /1 );
+    .main {
+      margin-bottom: 30px;
     }
+    .card {
+      flex-basis: calc((100% - 0px) /1 );
+  }
+    
+    .footer__info {
+    text-align: center;
+    margin-right: 0;
+    }
+    .social__wrap--title {
+      padding-top: 65px;
+    }
+    .footer__social {
+      padding-left: 0;
+    }
+    .text__transform{
+    text-align: center;
+    padding-left: 24px;
+    font-size: 20px;
+    padding-bottom: 70px;
+      overflow: hidden;
+  }
+  .section__button--wrap {
+    width: 426px;
+    .text__button {
+      margin-bottom: 15px;
+      margin-left: 8px;
+    }
+    .section__button {
+      .container {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+  }
+  .header {
+  .header__wrapper {
+    display: none;
+  }
+}
+label span {
+  top: 15px;
+}
+label span,
+   label span::before,
+   label span::after {
+    content: '';
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: #333;
+      position: absolute;
+      right: 0;
+      transition: .3s;
+   }
+   label span::before {
+    top: 8px;
+   }
+   label span::after {
+    top: -8px;
+   }
   }
     

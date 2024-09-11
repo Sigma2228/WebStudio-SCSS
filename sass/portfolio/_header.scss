@@ -1,25 +1,25 @@
 .header {
     padding: 32px;
-    border-bottom: 1px solid getColor('header-background');
-    margin-bottom: 94px;
+   
+
 
     .header__list {
-        @extend %list-style;
+      @extend %list-style;
     }
-    .header__logo {
-        padding-top: 24px;
-        padding-bottom: 32px;
+
+    .header__icon {
+        fill: #2196F3;
     }
-    .header__wrapper {
+     .header__wrapper {
         display: flex;
-        justify-content: center;
-    }
+        align-items: center;
+     }
     .header__wrap {
         display: flex;
         position: relative;
     }
     .line__focus {
-        width: 78px;
+        width: 48px;
         height: 4px;
         border-radius: 2px;
         background-color: getColor('hover');
@@ -27,31 +27,51 @@
         position: absolute;
         top: 53px;
     }
+
+    
 }
 
 .header {
+
     .container {
        @extend %flex;
     }
 }
-.mail-tel-wrap {
-    display: flex;
-
-}
 
 .header__link {
-    padding-top: 32px;
-    color: getColor('font');
+    margin-left: 50px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    padding-bottom: 32px;
-    margin-left: 51px;
+    color: getColor('nav');
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+
+    &:hover {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: getColor('hover');
+        cursor: pointer;
+    }
+
+}
+
+
+
+.header__mail {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: getColor('font-card');
+    margin-right: 50px;
+    margin-left: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: getColor('hover');
+        cursor: pointer;
     }
 }
 
@@ -59,21 +79,24 @@
     width: 16px;
     height: 12px;
     color: getColor('font-card');
-    margin-left: 320px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 340px;
+
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         color: getColor('hover');
         cursor: pointer;
     }
-}
 
+}
+.mail-tel-wrap {
+    display: flex;
+}
 .icon-smartphone {
     fill: getColor('font-card');
     width: 10px;
     height: 12px;
-    color: getColor('font-card');
+    color: #757575;
 
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,33 +105,21 @@
     }
 }
 
-.header__mail {
-    padding-top: 32px;
-    color: getColor('font');
+.header__tel {
     text-decoration: none;
     font-size: 14px;
+    color: getColor('font-card');
     font-weight: 500;
-    margin-right: 40px;
     margin-left: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
     &:hover {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: getColor('hover');
+        color: map-get($colors, 'hover');
+        cursor: pointer;
     }
 }
-
-.header__tel {
-    padding-top: 32px;
-    color: getColor('font');
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    margin-left: 10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        color: getColor('hover');
-    }
+.mail-tel-wrap {
+    display: flex;
 }
