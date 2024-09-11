@@ -10,6 +10,10 @@
         padding-top: 24px;
         padding-bottom: 32px;
     }
+    .header__wrapper {
+        display: flex;
+        justify-content: center;
+    }
     .header__wrap {
         display: flex;
         position: relative;
@@ -29,6 +33,10 @@
     .container {
        @extend %flex;
     }
+}
+.mail-tel-wrap {
+    display: flex;
+
 }
 
 .header__link {
