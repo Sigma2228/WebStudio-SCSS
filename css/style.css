@@ -761,6 +761,14 @@ address {
   .container {
     width: 720px;
   }
+  .backdrop {
+    width: 100%;
+  }
+  .backdrop .modal {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+  }
   .card {
     flex-basis: calc((100% - 60px) / 2);
   }
@@ -846,9 +854,16 @@ address {
   .container {
     width: 540px;
   }
-  .modal {
-    min-width: 450px;
-    min-height: 609px;
+  .textarea {
+    width: 100%;
+  }
+  .backdrop {
+    width: 100%;
+  }
+  .backdrop .modal {
+    position: absolute;
+    top: 50%;
+    left: 45%;
   }
   .card {
     flex-basis: calc((100% - 60px) / 2);
@@ -945,6 +960,9 @@ address {
   .header__icon {
     margin-right: 100px;
   }
+  .textarea {
+    width: 100%;
+  }
   .modal {
     min-width: 450px;
     min-height: 609px;
@@ -965,15 +983,6 @@ address {
   }
   .text1 h1 {
     text-align: center;
-  }
-  label {
-    display: block;
-    height: 30px;
-    width: 30px;
-    margin-left: auto;
-    position: relative;
-    z-index: 10;
-    margin-left: 0;
   }
   label span {
     top: 15px;
