@@ -445,7 +445,7 @@ address {
   }
   .mail-tel-wrap {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 50px;
   }
   .button__subscribe {
