@@ -6,7 +6,15 @@
     text-align: center;
     padding: 200px 0;
     margin-bottom: 94px;
-
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section__button {
+      background-image: url("../../Photo18/Шапка(3)@2x.jpg");
+    }
+  }
 
     .section__titl {
         white-space: pre-wrap;
