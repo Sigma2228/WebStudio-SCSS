@@ -44,6 +44,7 @@
 
 .header {
   padding: 32px;
+  position: relative;
 }
 .header .header__icon {
   fill: #2196F3;
@@ -54,7 +55,6 @@
 }
 .header .header__wrap {
   display: flex;
-  position: relative;
 }
 .header .line__focus {
   width: 48px;
@@ -141,6 +141,86 @@
   display: flex;
 }
 
+@media (max-width: 575px) {
+  nav {
+    order: 1;
+    width: 100vw;
+  }
+  label {
+    display: block;
+    height: 30px;
+    position: relative;
+    top: 15px;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  label span {
+    margin-left: 150px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    transition: 0.3s;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  .line__focus {
+    display: none;
+  }
+  .header__wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .mail-tel-wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header__wrapper {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .header__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__wrapper {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 12px 8px #ececec;
+  }
+  .header__wrapper li {
+    margin: 15px 0;
+  }
+  input[type=checkbox]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+}
 .section__button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(26, 18, 18, 0.452)), url("../Photo18/Img (1).png");
   background-size: cover;
