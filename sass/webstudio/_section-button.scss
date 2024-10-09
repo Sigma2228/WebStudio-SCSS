@@ -1,6 +1,6 @@
 .section__button {
     background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(26, 18, 18, 0.452)),
-        url("../Photo18/Img (1).png");
+        url("../../Photo18/section-button.png");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -12,7 +12,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section__button {
-      background-image: url("../../Photo18/Шапка(3)@2x.jpg");
+      background-image: url("../../Photo18/background.jpg");
     }
   }
 

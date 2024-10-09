@@ -24,7 +24,7 @@
         background-color: getColor('hover');
         margin-left: 47px;
         position: absolute;
-        top: 53px;
+        top: 93px;
     }
 
     
@@ -121,6 +121,9 @@
 }
 .mail-tel-wrap {
     display: flex;
+}
+input[type="checkbox"] {
+  display: none;
 }
 @media (max-width: 575px) {
     nav {
